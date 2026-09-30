@@ -78,7 +78,7 @@ const CONFIG = {
 
     pageSize: 1000,
 
-    defaultOwnerGroup: "CIO_Service_Management",
+    defaultOwnerGroup: "",
 
     /**
      * When enabled, the sync will use LeanIX Application.itilAssignment
@@ -107,8 +107,8 @@ const CONFIG = {
     defaultServiceTier: "NONE",
 
     ownerByFactSheetType: {
-      Application: "CIO_Service_Management",
-      Interface: "CIO_Service_Management",
+      Application: "",
+      Interface: "",
     },
 
     serviceTypeByFactSheetType: {
