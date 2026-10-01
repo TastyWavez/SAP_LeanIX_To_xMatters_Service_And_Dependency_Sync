@@ -20,7 +20,7 @@ For each included Fact Sheet, the script creates or updates an xMatters Service 
 | `description` | LeanIX description plus a managed metadata block containing the Fact Sheet ID, type, original name, ITIL assignment group, and ITIL approval group. The total is limited to 2,000 characters; long source descriptions are trimmed. |
 | `serviceType` | Mapped by Fact Sheet type: `Application` → `APPLICATION`; `Interface` → `TECHNICAL`. |
 | `serviceTier` | Mapped by Fact Sheet type: `Application` → `GOLD`; `Interface` → `SILVER`. |
-| `ownedBy` | Uses the LeanIX Application `itilAssignment` value when enabled and when it matches an existing xMatters Group. Otherwise it falls back to the configured owner mapping/default group. The current Application and Interface fallback is `CIO_Service_Management`. |
+| `ownedBy` | Uses the LeanIX Application `itilAssignment` value when enabled and when it matches an existing xMatters Group. Otherwise it falls back to the configured owner mapping/default group. The current Application and Interface fallback owner is an empty string. Update as needed |
 
 The managed metadata in the description lets later runs identify services created or managed from LeanIX Fact Sheets. xMatters fields outside the managed set are not used to determine whether a service needs an update.
 
